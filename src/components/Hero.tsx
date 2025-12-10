@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import profileImage from '@/assets/profile.jpg';
 
 const carouselImages = [
   'https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&h=1080&fit=crop',
@@ -56,7 +57,7 @@ export default function Hero() {
           <div className="relative inline-block">
             <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl mx-auto">
               <img
-                src="/profile.jpg"
+                src={profileImage}
                 alt="Anwar - Wedding Photographer"
                 className="w-full h-full object-cover"
               />
