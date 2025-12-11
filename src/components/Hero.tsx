@@ -1,13 +1,18 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import profileImage from '@/assets/profile.jpg';
+import cover01 from '@/assets/hero/cover-01.jpg';
+import cover02 from '@/assets/hero/cover-02.jpg';
+import cover03 from '@/assets/hero/cover-03.jpg';
+import cover04 from '@/assets/hero/cover-04.jpg';
+import cover05 from '@/assets/hero/cover-05.jpg';
 
 const carouselImages = [
-  'https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&h=1080&fit=crop',
-  'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1920&h=1080&fit=crop',
-  'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1920&h=1080&fit=crop',
-  'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1920&h=1080&fit=crop',
-  'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1920&h=1080&fit=crop',
+  cover01,
+  cover02,
+  cover03,
+  cover04,
+  cover05,
 ];
 
 export default function Hero() {
