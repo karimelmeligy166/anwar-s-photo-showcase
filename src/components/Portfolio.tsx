@@ -3,27 +3,28 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Instagram } from 'lucide-react';
 
+import wedding01 from '@/assets/portfolio/wedding-01.jpg';
+import wedding02 from '@/assets/portfolio/wedding-02.jpg';
+import wedding03 from '@/assets/portfolio/wedding-03.jpg';
+import wedding04 from '@/assets/portfolio/wedding-04.jpg';
+import wedding05 from '@/assets/portfolio/wedding-05.jpg';
+import wedding06 from '@/assets/portfolio/wedding-06.jpg';
+import wedding07 from '@/assets/portfolio/wedding-07.jpg';
+import wedding08 from '@/assets/portfolio/wedding-08.jpg';
+import wedding09 from '@/assets/portfolio/wedding-09.jpg';
+import wedding10 from '@/assets/portfolio/wedding-10.jpg';
+
 const portfolioImages = [
-  'https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1544078751-58fee2d8a03b?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1460978812857-470ed1c77af0?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1549417229-7686ac5595fd?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1550005809-91ad75fb315f?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?w=600&h=400&fit=crop',
+  wedding01,
+  wedding02,
+  wedding03,
+  wedding04,
+  wedding05,
+  wedding06,
+  wedding07,
+  wedding08,
+  wedding09,
+  wedding10,
 ];
 
 export default function Portfolio() {
