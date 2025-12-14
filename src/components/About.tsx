@@ -23,26 +23,26 @@ export default function About() {
           <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-12" />
           
           <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg mb-8">
-            With over years of experience in wedding photography, I've had the honor of documenting 
-            hundreds of love stories across Egypt and beyond. My approach combines candid moments 
-            with artistic compositions, creating a timeless collection that reflects the genuine 
-            emotions of your special day.
+            My name is Mohamed Anwar, born in 2001, and I am a graduate of the Faculty of Applied Arts, 
+            Graphic Design and Advertising Department. I have been working as a professional wedding 
+            photographer since 2020, with hands-on experience in capturing real emotions, genuine moments, 
+            and timeless memories.
           </p>
           
           <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg mb-12">
-            Every wedding is unique, and I believe in capturing not just the big moments, but the 
-            subtle glances, joyful tears, and spontaneous laughter that make your celebration 
-            truly yours. Using professional equipment and advanced color correction techniques, 
-            I deliver fully edited photos that will look stunning for generations to come.
+            Over the years, I have photographed more than 400 weddings, each with its own unique story 
+            and details. Through this journey, I have successfully built and led a strong, well-organized 
+            photography team that shares the same vision, passion, and commitment to quality. Our goal is 
+            not just to document a wedding day, but to create a visual story that couples can relive for a lifetime.
           </p>
 
           <div className="flex justify-center gap-12 md:gap-20">
             <div className="text-center">
-              <div className="font-display text-4xl md:text-5xl text-primary mb-2">500+</div>
+              <div className="font-display text-4xl md:text-5xl text-primary mb-2">400+</div>
               <div className="font-body text-sm text-muted-foreground tracking-wider uppercase">Weddings</div>
             </div>
             <div className="text-center">
-              <div className="font-display text-4xl md:text-5xl text-primary mb-2">7+</div>
+              <div className="font-display text-4xl md:text-5xl text-primary mb-2">5+</div>
               <div className="font-body text-sm text-muted-foreground tracking-wider uppercase">Years</div>
             </div>
             <div className="text-center">
