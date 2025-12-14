@@ -13,10 +13,6 @@ import wedding07 from '@/assets/portfolio/wedding-07.jpg';
 import wedding08 from '@/assets/portfolio/wedding-08.jpg';
 import wedding09 from '@/assets/portfolio/wedding-09.jpg';
 import wedding10 from '@/assets/portfolio/wedding-10.jpg';
-import wedding11 from '@/assets/portfolio/wedding-11.jpg';
-import wedding12 from '@/assets/portfolio/wedding-12.jpg';
-import wedding13 from '@/assets/portfolio/wedding-13.jpg';
-import wedding14 from '@/assets/portfolio/wedding-14.jpg';
 
 const portfolioImages = [
   wedding01,
@@ -29,10 +25,6 @@ const portfolioImages = [
   wedding08,
   wedding09,
   wedding10,
-  wedding11,
-  wedding12,
-  wedding13,
-  wedding14,
 ];
 
 export default function Portfolio() {
@@ -66,19 +58,19 @@ export default function Portfolio() {
           </a>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
           {portfolioImages.map((img, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="relative aspect-[4/3] overflow-hidden group cursor-pointer"
+              className="relative overflow-hidden group cursor-pointer"
             >
               <img
                 src={img}
                 alt={`Wedding portfolio ${index + 1}`}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                 <div className="w-12 h-12 border border-primary flex items-center justify-center">
