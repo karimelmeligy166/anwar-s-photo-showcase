@@ -13,6 +13,12 @@ import wedding07 from '@/assets/portfolio/wedding-07.jpg';
 import wedding08 from '@/assets/portfolio/wedding-08.jpg';
 import wedding09 from '@/assets/portfolio/wedding-09.jpg';
 import wedding10 from '@/assets/portfolio/wedding-10.jpg';
+import wedding11 from '@/assets/portfolio/wedding-11.jpg';
+import wedding12 from '@/assets/portfolio/wedding-12.jpg';
+import wedding13 from '@/assets/portfolio/wedding-13.jpg';
+import wedding14 from '@/assets/portfolio/wedding-14.jpg';
+import wedding15 from '@/assets/portfolio/wedding-15.jpg';
+import wedding16 from '@/assets/portfolio/wedding-16.jpg';
 
 const portfolioImages = [
   wedding01,
@@ -25,6 +31,12 @@ const portfolioImages = [
   wedding08,
   wedding09,
   wedding10,
+  wedding11,
+  wedding12,
+  wedding13,
+  wedding14,
+  wedding15,
+  wedding16,
 ];
 
 export default function Portfolio() {
