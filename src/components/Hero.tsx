@@ -1,19 +1,14 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import profileImage from '@/assets/profile.jpg';
-import cover01 from '@/assets/hero/cover-01.jpg';
-import cover02 from '@/assets/hero/cover-02.jpg';
-import cover03 from '@/assets/hero/cover-03.jpg';
-import cover04 from '@/assets/hero/cover-04.jpg';
-import cover05 from '@/assets/hero/cover-05.jpg';
 import { scrollToSection } from '@/lib/utils';
 
 const carouselImages = [
-  cover01,
-  cover02,
-  cover03,
-  cover04,
-  cover05,
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766609898/cover-01_djkrma.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766609897/cover-02_cgqt1b.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766609898/cover-03_zgdxh5.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766609897/cover-04_bvrg8d.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766609899/cover-05_rxpnvf.webp",
 ];
 
 export default function Hero() {
@@ -45,6 +40,8 @@ export default function Hero() {
               src={img}
               alt={`Wedding photography ${index + 1}`}
               className="w-full h-full object-cover"
+              loading={index === 0 ? "eager" : "lazy"}
+              decoding="async"
             />
           </motion.div>
         ))}
@@ -66,6 +63,8 @@ export default function Hero() {
                 src={profileImage}
                 alt="Anwar - Wedding Photographer"
                 className="w-full h-full object-cover"
+                loading="eager"
+                decoding="async"
               />
             </div>
             <div className="absolute -inset-2 rounded-full border border-primary/20 animate-pulse" />

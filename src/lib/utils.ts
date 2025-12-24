@@ -13,3 +13,10 @@ export function scrollToSection(targetId: string, offset: number = 80) {
   }
 }
 
+export function getOptimizedImage(url: string, width: number = 800): string {
+  if (!url.includes('cloudinary.com')) return url;
+
+  if (url.includes('/upload/f_auto')) return url;
+
+  return url.replace('/upload/', `/upload/f_auto,q_auto,w_${width}/`);
+}

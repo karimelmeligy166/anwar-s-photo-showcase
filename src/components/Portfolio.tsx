@@ -1,43 +1,28 @@
 import { motion } from 'framer-motion';
+import { getOptimizedImage } from '@/lib/utils';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { Instagram } from 'lucide-react';
 import Lightbox from './Lightbox';
 
-import wedding01 from '@/assets/portfolio/wedding-01.jpg';
-import wedding02 from '@/assets/portfolio/wedding-02.jpg';
-import wedding03 from '@/assets/portfolio/wedding-03.jpg';
-import wedding04 from '@/assets/portfolio/wedding-04.jpg';
-import wedding05 from '@/assets/portfolio/wedding-05.jpg';
-import wedding06 from '@/assets/portfolio/wedding-06.jpg';
-import wedding07 from '@/assets/portfolio/wedding-07.jpg';
-import wedding08 from '@/assets/portfolio/wedding-08.jpg';
-import wedding09 from '@/assets/portfolio/wedding-09.jpg';
-import wedding10 from '@/assets/portfolio/wedding-10.jpg';
-import wedding11 from '@/assets/portfolio/wedding-11.jpg';
-import wedding12 from '@/assets/portfolio/wedding-12.jpg';
-import wedding13 from '@/assets/portfolio/wedding-13.jpg';
-import wedding14 from '@/assets/portfolio/wedding-14.jpg';
-import wedding15 from '@/assets/portfolio/wedding-15.jpg';
-import wedding16 from '@/assets/portfolio/wedding-16.jpg';
-
 const portfolioImages = [
-  wedding01,
-  wedding02,
-  wedding03,
-  wedding04,
-  wedding05,
-  wedding06,
-  wedding07,
-  wedding08,
-  wedding09,
-  wedding10,
-  wedding11,
-  wedding12,
-  wedding13,
-  wedding14,
-  wedding15,
-  wedding16,
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766596833/wedding-13_jrculc.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766596836/wedding-04_plzpm7.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766596838/wedding-01_e76kzn.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766596839/wedding-03_shhfmr.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766598191/wedding-02_xe0el5.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766596846/wedding-06_fjdast.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766596845/wedding-07_tax3ep.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766596861/wedding-08_zmy7ed.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766596853/wedding-09_wsmsfs.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766596852/wedding-10_so5pk1.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766596852/wedding-11_yfrzek.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766596844/wedding-12_n1hzsj.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766596839/wedding-14_ijv2ec.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766596854/wedding-15_uqii3h.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766596846/wedding-16_pvj5ne.webp",
+  "https://res.cloudinary.com/drsmh1bqk/image/upload/v1766596862/wedding-05_bytet5.webp",
+
 ];
 
 export default function Portfolio() {
@@ -102,8 +87,12 @@ export default function Portfolio() {
                 onClick={() => openLightbox(index)}
               >
                 <img
-                  src={img}
+                  src={getOptimizedImage(img, 600)}
                   alt={`Wedding portfolio ${index + 1}`}
+                  loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="450"
                   className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
@@ -118,7 +107,7 @@ export default function Portfolio() {
       </section>
 
       <Lightbox
-        images={portfolioImages}
+        images={portfolioImages.map(img => getOptimizedImage(img, 1200))}
         currentIndex={currentImageIndex}
         isOpen={lightboxOpen}
         onClose={closeLightbox}
